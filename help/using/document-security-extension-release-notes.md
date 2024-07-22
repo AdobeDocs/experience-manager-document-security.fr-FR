@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: c9342c28-8289-4831-a613-4bc03431f557
 exl-id: 582f10bb-60d2-46ed-b81d-5818a040edc6
-source-git-commit: 28137f26afc024d411857d44887bf69fe1ee2b81
+source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 73%
 
 ---
 
@@ -21,23 +21,27 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Le document utilise les termes Adobe Experience Manager Document Security for Microsoft Office, Adobe Experience Manager Document Security Extension for Microsoft Office et Document Security Extension for Microsoft Office de manière interchangeable.
+>Le document utilise les termes suivants de manière interchangeable :
+>
+>* Adobe Experience Manager Document Security for Microsoft Office
+>* Extension Adobe Experience Manager Document Security pour Microsoft Office
+>* Extension Document Security pour Microsoft Office
 
 ## Installation et configuration d’AEM Document Security Extension for Microsoft Office {#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Cette version de Document Security Extension for Microsoft Office est compatible avec les modules complémentaires Adobe LiveCycle Rights Management ES2 et versions ultérieures, et Document Security pour AEM Forms.
 
-Consultez les informations présentées dans ce document avant d’installer AEM Document Security Extension for Microsoft Office. Pour des instructions d’installation détaillées, reportez-vous à l’article [Installation et configuration d’AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md).
+Consultez les informations présentées dans ce document avant d’installer AEM Document Security Extension for Microsoft Office. Pour obtenir des instructions d’installation détaillées, reportez-vous à l’article [Installation et configuration d’AEM Document Security Extension for Microsoft Office](installing-configuring-aemdsext.md) .
 
 ## Problèmes résolus {#fixed-issues}
 
-* Affichage vertical des chaînes et ajout des sauts de ligne erronés au contenu. (Réf. CQ-4201054)
+* Affichage vertical des chaînes et ajout des sauts de ligne erronés au contenu. (CQ-4201054)
 
 ## Problèmes connus {#known-issues}
 
 ### Plug-ins tiers non pris en charge {#third-party-plug-ins-not-supported}
 
-AEM Document Security Extension for Microsoft Office ne fonctionne pas avec les plug-ins tiers. Désinstallez tous les plug-ins tiers de Microsoft Office avant d’installer Document Security Extension for Microsoft Office.
+AEM Document Security Extension for Microsoft Office ne fonctionne pas avec les plug-ins tiers. Désinstallez tous les modules externes tiers pour Microsoft Office avant d’installer Document Security Extension for Microsoft Office.
 
 ### Options de menu désactivées dans Microsoft Word, Excel et PowerPoint {#disabled-menu-options-in-microsoft-word-excel-and-powerpoint}
 
@@ -72,7 +76,7 @@ Dans Microsoft Office, les options suivantes ne sont pas disponibles lors d’u
 
 ### Ouverture d’un document protégé à partir de SharePoint Server {#opening-a-protected-document-from-sharepoint-server}
 
-Ouverture du document protégé : si vous tentez d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server sans ouvrir au préalable le programme Microsoft Office associé au type de fichier, comme Microsoft Word, Microsoft Excel ou Microsoft PowerPoint, le document risque de ne pas s’ouvrir. Un message d’erreur vous indique d’installer le plug-in approprié. Il est donc recommandé d’ouvrir le programme Microsoft Office associé avant d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server.
+Pour ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server, ouvrez d’abord le programme Microsoft Office associé (Word, Excel ou PowerPoint), sans quoi le document risque de ne pas s’ouvrir. Un message d’erreur vous indique d’installer le plug-in approprié. Il est donc recommandé d’ouvrir le programme Microsoft Office associé avant d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server.
 
 (Facultatif) Il est recommandé de vider votre dossier de cache avant d’ouvrir un document protégé dans Document Security Extension for Microsoft Office à partir de SharePoint Server.
 
@@ -80,7 +84,7 @@ Lorsque vous ouvrez un document protégé à partir de SharePoint Server, toute
 
 ### Application d’une politique avec un filigrane dynamique à Microsoft Excel 2013, Microsoft Excel 2016 et Microsoft Excel 2019 sans qu’aucune imprimante ne soit installée {#apply-a-policy-with-a-dynamic-watermark-to-microsoft-excel-microsoft-excel-and-microsoft-excel-file-with-no-printer-installed}
 
-Lorsque vous appliquez une politique avec filigrane dynamique à un fichier Excel 2013, 2016 et 2019 sur un ordinateur pour lequel aucune imprimante n’a été installée, puis que vous enregistrez le fichier, vous recevez le message d’erreur « Erreur interne lors de l’application du filigrane dynamique ». Cette erreur s’affiche également lorsque vous ouvrez de nouveau le fichier protégé. Le filigrane n’est pas appliqué et n’est pas visible depuis Afficher > Mise en page.
+L’application d’une stratégie avec filigrane dynamique à des fichiers Excel 2013, 2016 ou 2019 sur un ordinateur sans imprimantes entraîne l’erreur suivante : &quot;Erreur interne lors de l’application du filigrane dynamique&quot;. Cette erreur s’affiche également lorsque vous ouvrez de nouveau le fichier protégé. Le filigrane n’est pas appliqué et n’est pas visible depuis Afficher > Mise en page.
 
 ### Désactivation de la prévention de l’exécution des données Windows pour les applications Office prises en charge {#disable-windows-data-execution-prevention-for-supported-office-applications}
 
@@ -92,7 +96,7 @@ Quand vous protégez un fichier Microsoft Office partagé à l’aide de Documen
 
 ### Démarrage des applications Office sur un ordinateur contenant Document Security Extension for Microsoft Office et McAfee VirusScan {#starting-office-applications-on-a-machine-containing-document-security-extension-for-microsoft-office-and-mcafee-virusscan}
 
-Pour garantir le démarrage correct des applications Office sur un ordinateur doté de Document Security et de McAfee VirusScan avec activation de l’option d’analyse lors de l’accès (On-Access Scan), désactivez l’option de protection contre le débordement de la mémoire tampon (Buffer Overflow Protection) de la Console McAfee VirusScan.
+Pour garantir un démarrage fluide des applications Office sur un ordinateur avec Document Security et McAfee VirusScan (activation de l’analyse lors de l’accès), désactivez l’option Protection contre le débordement de la mémoire tampon dans la console McAfee VirusScan.
 
 ### Installation de Document Security Extension for Microsoft Office sur un ordinateur doté de Microsoft Office dans une langue non prise en charge {#installing-document-security-extension-for-microsoft-office-on-a-machine-with-an-unsupported-microsoft-office-language}
 
@@ -104,7 +108,7 @@ Le bouton de synchronisation pour un accès hors connexion est disponible, même
 
 ### Pas de prise en charge des versions d’évaluation de Microsoft Office {#no-support-for-trial-versions-of-microsoft-office}
 
-Document Security Extension for Microsoft Office ne prend pas en charge les versions d’évaluation de Microsoft Office. Avant d’installer l’extension, assurez-vous que vous avez installé une copie autorisée de Microsoft Office et qu’elle est activée.
+Document Security Extension for Microsoft Office ne prend pas en charge les versions d’évaluation de Microsoft Office. Avant d’installer l’extension, vérifiez que vous avez installé une copie sous licence de Microsoft Office et qu’elle est activée.
 
 ### Impossible d’ouvrir des fichiers Microsoft Office protégés {#unable-to-open-a-protected-microsoft-office-files}
 
@@ -112,14 +116,14 @@ Si la vue protégée de Microsoft Office est activée, Rights Management Extensi
 
 ### Les cellules du document Microsoft Excel contenant une image ou une couleur d’arrière-plan, s’affichent sur le filigrane {#cells-of-microsoft-excel-document-containing-an-image-or-background-color-appear-on-top-of-watermark}
 
-Si une cellule d’un document Microsoft Excel contient une image ou est remplie de couleur en arrière-plan et qu’une politique de filigrane dynamique est appliquée au document, l’image ou la couleur d’arrière-plan remplissant la cellule recouvre le filigrane.
+Si une cellule d’un document Excel comporte une image ou une couleur d’arrière-plan et qu’un filigrane dynamique est appliqué, l’image ou la couleur couvre le filigrane. Cette approche signifie que le filigrane est couvert par l’image ou la couleur d’arrière-plan de la cellule.
 
 ### Problème d’utilisation avec plusieurs certificats {#usability-issue-with-multiple-certificates}
 
-Si plusieurs certificats sont présents sur l’ordinateur client et que l’utilisateur annule la boîte de dialogue de sélection de certificat, la boîte de dialogue s’affiche de nouveau et l’utilisateur doit annuler la boîte de dialogue deux fois.
+Si plusieurs certificats sont présents sur l’ordinateur client et que l’utilisateur annule la boîte de dialogue de sélection du certificat, la boîte de dialogue s’affiche à nouveau. L’utilisateur doit annuler la boîte de dialogue deux fois.
 
 ### Microsoft PowerPoint permet de modifier les documents protégés {#microsoft-powerpoint-allows-editing-protected-documents}
 
-Lors d’une tentative de modification d’un document protégé, Microsoft PowerPoint affiche le message « Vous n’êtes pas autorisé à modifier ce document. Vous ne pourrez pas enregistrer vos modifications. » Après la fermeture du message, les utilisateurs et les utilisatrices peuvent continuer à ajouter du texte ou à modifier le document. Toutefois, les modifications apportées aux documents protégés ne sont pas enregistrées.
+Lors d’une tentative de modification d’un document protégé, Microsoft PowerPoint affiche le message « Vous n’êtes pas autorisé à modifier ce document. Vous ne pouvez pas enregistrer vos modifications.&quot; Après la fermeture du message, les utilisateurs et les utilisatrices peuvent continuer à ajouter du texte ou à modifier le document. Toutefois, les modifications apportées aux documents protégés ne sont pas enregistrées.
 
 Le comportement indiqué ci-dessus se manifeste dans PowerPoint 2013, PowerPoint 2016 et PowerPoint 2019.

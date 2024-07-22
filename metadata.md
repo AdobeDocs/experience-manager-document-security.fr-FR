@@ -8,9 +8,9 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-document-security.fr-FR
 index: true
 recommendations: noDisplay
-source-git-commit: 8b36d6dd8755d779c5e7f258df3ee2c68a5d1a5e
+source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
@@ -24,10 +24,10 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 |--- |--- |
 | solution-title | Utilisé dans l’en-tête de l’article en tant que lien. |
 | solution-hub-url | Ouvre la page hub helpx. |
-| solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
+| solution-icon | Affiche une icône de solution à côté du titre de la solution. Pas encore implémenté. |
 | getting-started-url | Lien vers la page de démarrage helpx. |
 | tutorials-url | Lien vers les tutoriels vidéo : tutoriels helpx ou KT. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le volet de droite. La valeur par défaut est 2. |
 | git-repo | Spécifie l’emplacement du référentiel principal pour une utilisation interne. |
 
 Dans le fichier TOC.md

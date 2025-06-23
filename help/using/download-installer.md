@@ -5,10 +5,10 @@ uuid: b4c7d1d1-7eae-4fd3-8282-132c80a976e8
 contentOwner: khsingh
 discoiquuid: b32c7bb8-0060-4c2a-90fc-446b6ba39159
 exl-id: 25d2f439-e6c9-4d0a-bbd1-91d0f00dc683
-source-git-commit: 3b6a686966fb8d006bed8cc4a4bf5eebe0dfb030
-workflow-type: ht
-source-wordcount: '207'
-ht-degree: 100%
+source-git-commit: 265c81b4b424c96e1d53c962af39756ee43c443d
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 82%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## Configuration requise {#system-requirements}
 
-* Versions 32 bits ou 64 bits de Microsoft® Windows 7 ou Windows 10
+* Versions 32 bits ou 64 bits de Microsoft® Office 2019 Professional Plus sous Microsoft® Windows 11
+* Versions 32 bits ou 64 bits de Microsoft® Office 2016, Office 2019 ou des applications de bureau Office installées dans le cadre d’Office 365 sous Microsoft® Windows 10
 * Remarque : Document Security Extension for Microsoft® Office est également prévu pour fonctionner sur des appareils Microsoft® Surface.
-* Versions 32 bits ou 64 bits de Microsoft Office® 2013, 2016, 2019 ou applications de bureau Microsoft® Office installées dans le cadre d’Office 365
 * Processeur 1,3 GHz ou supérieur
 * 2 Go de RAM
 * 100 Mo d’espace disque disponible

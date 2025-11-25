@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 6cf19ed9439e5be5a4c2e2fa2458879f37c25b96
-workflow-type: ht
-source-wordcount: '6136'
-ht-degree: 100%
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
+source-wordcount: '6139'
+ht-degree: 98%
 
 ---
 
@@ -327,7 +327,7 @@ Pour plus d’informations sur la création et la gestion des politiques, voir [
 
 ### Application des politiques {#applying-policies}
 
-Vous pouvez appliquer toute politique disponible à un fichier, y compris celles que vous avez créées et celles qui font partie de jeux de politiques auxquels vous avez accès. Avant d’appliquer une politique, vous devez enregistrer le fichier.
+Vous pouvez appliquer toute politique disponible à un fichier, y compris celles que vous avez créées et celles qui font partie d’ensembles de politiques auxquels vous avez accès. Avant d’appliquer une politique, vous devez enregistrer le fichier.
 
 Une fois que vous avez appliqué une politique, celle-ci est ajoutée à la liste des éléments récemment utilisés du menu Document Security d’AEM. Vous pouvez ainsi appliquer rapidement les politiques les plus couramment utilisées. La liste des éléments récemment utilisés affiche uniquement les politiques pour le serveur auquel votre connexion est effective ou pour votre serveur par défaut si vous n’avez pas de connexion effective à une autre instance Document Security.
 
@@ -373,7 +373,7 @@ Si une fonction n’est pas disponible, le nom de la commande dans le menu et le
 
 Vous pouvez ouvrir des fichiers protégés par une politique en utilisant les mêmes méthodes que celles utilisées pour ouvrir tout autre fichier. Si vous n’avez pas de connexion active à Document Security, il vous est demandé de vous connecter. Cela se produit si vous ne disposez pas d’une connexion à Internet et que vous pouvez ouvrir le fichier hors ligne. Si vous annulez le processus de connexion, l’accès est refusé.
 
-Si vous ne disposez pas de l’autorisation pour ouvrir le fichier, il vous est indiqué que l’accès est refusé. Si les privilèges d’accès aux fichiers ont été révoqués, vous pouvez également être redirigé vers une version mise à jour du fichier si celle-ci est disponible. Pour obtenir une assistance supplémentaire si vous ne pouvez pas ouvrir un fichier protégé par une politique, contactez l’éditeur de fichiers.
+Si vous ne disposez pas de l’autorisation pour ouvrir le fichier, il vous est indiqué que l’accès est refusé. Si les privilèges d’accès au fichier sont révoqués, vous pouvez également être redirigé vers une version mise à jour du fichier, le cas échéant. Pour obtenir une assistance supplémentaire si vous ne pouvez pas ouvrir un fichier protégé par une politique, contactez l’éditeur de fichiers.
 
 Lorsqu’un fichier protégé est ouvert, le texte de la barre de titre qui suit le nom du fichier indique que le fichier est protégé par Document Security d’AEM.
 
@@ -403,17 +403,17 @@ Dans Document Security Extension for Microsoft® Office 2010, le groupe État 
 
 Procédez comme suit :
 
-* Dans Document Security Extension for Microsoft® Office 2010 et 2013, dans l’**onglet Document Security**, sélectionnez un élément dans le groupe **État de la sécurité**.
+* Dans Document Security Extension for Microsoft® Office 2010 et 2013, dans l’**onglet Document Security**, cliquez sur un élément dans le groupe **État de la sécurité**.
 
 ### Enregistrer des documents lorsque l’application automatique de la stratégie est activée {#saving-documents-when-auto-apply-policy-is-enabled}
 
-Si votre administration a activé la fonctionnalité d’application automatique de la stratégie, tout document créé ou modifié sera automatiquement protégé lors de son enregistrement.
+Si votre administrateur a activé la fonctionnalité de stratégie appliquée automatiquement, tout document créé ou modifié est automatiquement protégé lors de son enregistrement.
 
-Si l’application automatique de la politique est activée, l’extension Document Security pour Microsoft® Office vous invite à vous connecter au serveur Document Security. Saisissez votre nom d’utilisateur ou d’utilisatrice et votre mot de passe afin que le serveur puisse vous authentifier. Si vous avez fourni les informations d’identification appropriées, le document est enregistré et protégé.
+Si la stratégie appliquée automatiquement est activée, Document Security Extension for Microsoft® Office vous invite à vous connecter au serveur Document Security. Saisissez votre nom d’utilisateur ou d’utilisatrice et votre mot de passe afin que le serveur puisse vous authentifier. Si vous avez fourni les informations d’identification appropriées, le document est enregistré et protégé.
 
 >[!NOTE]
 >
->Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cela dépend de la manière dont votre administrateur ou votre administratrice a configuré l’application automatique de la politique. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
+>Si vous ne pouvez pas vous connecter à Document Security, le document peut être enregistré ou non. Cette situation dépend de la manière dont votre administrateur a configuré la politique appliquée automatiquement. Vérifiez avec l’administrateur comment les documents sont traités dans cette situation.
 
 ### Synchronisation en vue de l’accès hors connexion {#synchronizing-for-offline-access}
 

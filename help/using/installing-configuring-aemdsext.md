@@ -6,10 +6,10 @@ content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
 exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
-source-git-commit: 69abd3e49fcf79b8bf2a7f344abeeae250b1479f
-workflow-type: ht
+source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+workflow-type: tm+mt
 source-wordcount: '2845'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,7 @@ Vérifiez les configurations minimales suivantes sur lesquelles vous souhaitez i
 
 * Versions 32 ou 64 bits de Microsoft Office 2019 Professionnel Plus sur Microsoft Windows 11 anglais, français, allemand, japonais, italien, espagnol, portugais brésilien, coréen, chinois simplifié ou traditionnel.
 
-* Versions 32 ou 64 bits de Microsoft Windows 10 en anglais, français, allemand, japonais, italien, espagnol, portugais brésilien, coréen, chinois simplifié ou traditionnel.
+* Versions 32 ou 64 bits de Microsoft Windows 10 en anglais, français, allemand, japonais, italien, espagnol, brésilien, portugais, coréen, chinois simplifié ou traditionnel.
 
   **Note :** *Document Security Extension for Microsoft Office est également prévue pour fonctionner sur des appareils Microsoft Surface.*
 
@@ -98,7 +98,7 @@ Le programme d’installation est également disponible sous la forme d’un fic
 
    `msiexec /I DocumentSecurityExtensionforMicrosoftOffice.msi /qn`
 
-## Préconfiguration du programme d’installation pour la connexion à Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
+## Préconfigurer le programme d’installation pour la connexion à Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
 Vous pouvez préconfigurer l’extension Document Security afin que le programme d’installation de Microsoft Office pointe vers un serveur LiveCycle ou AEM. Cela permet de s’assurer que les utilisateurs et les utilisatrices qui installent l’extension Document Security pour Microsoft Office peuvent utiliser les fonctionnalités sans configurer de connexion. En outre, ces utilisateurs peuvent ouvrir des documents protégés sans configuration. Toutefois, ils ne peuvent pas protéger les nouveaux documents tant qu’ils n’ont pas configuré le client pour qu’il utilise un serveur particulier.
 
@@ -182,13 +182,13 @@ Vous pouvez spécifier l’une des options suivantes :
 * Protéger tous les documents à l’aide d’une politique par défaut.
 * Offrez la possibilité aux utilisateurs et aux utilisatrices d’enregistrer un fichier dans un format non protégé lorsqu’ils ne peuvent pas se connecter au serveur. Cette flexibilité permet de tenir compte des cas où les utilisateurs créent des documents alors qu’ils sont déconnectés du réseau (par exemple, lorsqu’ils sont dans un avion).
 
-Après avoir activé la fonction d’application automatique de la politique, le document est protégé par la politique par défaut dans les cas suivants :
+Une fois la fonction de politique appliquée automatiquement activée, le document est protégé par la politique par défaut dans les cas suivants :
 
 * Un utilisateur ou une utilisatrice modifie et enregistre un document nouvellement créé.
 * Un utilisateur ou une utilisatrice modifie et enregistre un document non protégé.
 * L’utilisateur ou l’utilisatrice démarre une application qui s’ouvre avec un document par défaut, puis modifie et enregistre le document.
 
-### Configurer la fonction d’application automatique de la politique dans le fichier MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
+### Configuration de la fonction de stratégie appliquée automatiquement dans le fichier MSI {#configure-the-auto-apply-policy-feature-in-the-msi-file}
 
 Avant de commencer, préconfigurez le programme d’installation pour qu’il pointe vers votre serveur LiveCycle ou AEM Forms, comme décrit précédemment dans cet article.
 
@@ -209,12 +209,12 @@ Avant de commencer, préconfigurez le programme d’installation pour qu’il po
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>Activez ou désactivez la fonction d’application automatique de la politique.</p> <p><code>1</code>: Activer</p> <p>0: Désactiver</p> </td>
+   <td><p>Activez ou désactivez la fonction de stratégie appliquée automatiquement .</p> <p><code>1</code>: Activer</p> <p>0: Désactiver</p> </td>
    <td><p>0</p> </td>
   </tr>
   <tr>
    <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>GUID de la politique à utiliser lorsque de nouveaux documents sont enregistrés. Cette valeur s’applique à la fonction d’application automatique de la politique.</p> </td>
+   <td><p>GUID de la politique à utiliser lorsque de nouveaux documents sont enregistrés. Cette valeur s’applique à la fonction de stratégie appliquée automatiquement .</p> </td>
    <td><p>ID de politique hexadécimal visible sur le serveur RM</p> </td>
   </tr>
   <tr>
@@ -245,16 +245,16 @@ Avant de commencer, préconfigurez le programme d’installation pour qu’il po
    >
    >Il est courant d’utiliser le même nom de fichier que celui du fichier MSI d’origine (par exemple, `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Activation de la protection automatique des nouveaux documents {#enabling-automatic-protection-of-new-documents}
+## Activer la protection automatique des nouveaux documents {#enabling-automatic-protection-of-new-documents}
 
-L’administrateur ou l’administratrice peut activer la possibilité de protéger automatiquement tout document enregistré par un utilisateur ou une utilisatrice. L’administrateur ou l’administratrice configure la fonction d’application automatique de la politique dans le programme d’installation de Document Security Extension pour Microsoft Office.
+L’administrateur ou l’administratrice peut activer la possibilité de protéger automatiquement tout document enregistré par un utilisateur ou une utilisatrice. L’administrateur configure la fonction de stratégie appliquée automatiquement dans le programme d’installation de Document Security Extension for Microsoft Office.
 
-Si l’option Application automatique de la politique est activée, tous les documents enregistrés par l’utilisateur ou l’utilisatrice sont protégés par la politique par défaut. Cette action s’applique dans les cas suivants :
+Si la politique appliquée automatiquement est activée, tous les documents enregistrés par l’utilisateur sont protégés par la politique par défaut. Cette action s’applique dans les cas suivants :
 
 * Un utilisateur crée un document, le modifie et l’enregistre.
 * Un utilisateur ouvre un document non protégé, le modifie et l’enregistre.
 
-Pour plus d’informations sur la configuration de la fonction d’application automatique de la politique, consultez [Configurer une application automatique de la politique par défaut](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
+Pour plus d’informations sur la configuration de la politique appliquée automatiquement, voir [Configuration d’une application automatique de la politique par défaut](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
 ## Activer l’interface d’utilisation sans ruban {#enable-ribbon-less-user-interface}
 

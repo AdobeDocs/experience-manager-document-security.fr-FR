@@ -82,7 +82,7 @@ Pour en savoir plus sur Document Security d’AEM, consultez les ressources pr�
   </tr>
   <tr>
    <td><p>Mises à jour des correctifs, notes techniques et informations supplémentaires sur cette version du produit.</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>

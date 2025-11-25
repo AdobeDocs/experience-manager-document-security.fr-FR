@@ -423,7 +423,7 @@ Procédez comme suit :
 
 * Dans Document Security Extension for Microsoft® Office 2010 et 2013, dans l’onglet **Document Security**, sélectionnez **Synchroniser hors ligne**.
 
-  ***Note ** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
+  ***Note &#x200B;** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
 
 ### Utiliser les filigranes dynamiques {#working-with-dynamic-watermarks}
 
@@ -583,7 +583,7 @@ Lorsque vous ouvrez un fichier protégé par une politique dans Word, les inform
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Billet de blog > Publier** Non disponible pendant une session protégée.
 
@@ -655,7 +655,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Fichier > Serveur > Menu Tâches du serveur de fichiers** Non disponible pendant une session protégée.
 
@@ -717,7 +717,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Enregistrer les informations de récupération automatique** Indisponible pendant une session protégée.
 
-***Note ** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
+***Note &#x200B;** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
 
 #### Restrictions dans PowerPoint 2010 et PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 

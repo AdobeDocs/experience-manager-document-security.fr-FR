@@ -1,14 +1,18 @@
 ---
-title: Utiliser AEM Document Security Extension for Microsoft® Office
+title: Utilisation d’AEM Document Security Extension for Microsoft&reg; Office
 description: Vous pouvez contrôler l’utilisation que font les destinataires de vos fichiers protégés, quelle que soit la portée de leur diffusion. Le document décrit comment protéger les fichiers et utiliser des fichiers protégés.
 uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/cI8I72aByEI0tcij2o-QNkGjTxCztTa4uZFXsfwlMVc
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '6139'
+source-wordcount: 6278
 ht-degree: 98%
 
 ---
@@ -247,7 +251,7 @@ Certains des paramètres disponibles pour la création de politiques dans les pa
    <td><p>Non applicable.</p></td>
   </tr>
   <tr>
-   <td><p>Hors connexion</p></td>
+   <td><p>Hors ligne</p></td>
    <td><p>Le fichier peut être ouvert hors connexion.</p></td>
   </tr>
   <tr>
@@ -282,7 +286,7 @@ Certains des paramètres disponibles pour la création de politiques dans les pa
    <td><p>Pris en charge.</p></td>
   </tr>
   <tr>
-   <td><p>Période d’ouverture hors connexion</p></td>
+   <td><p>Période de bail hors ligne automatique</p></td>
    <td><p>Pris en charge.</p></td>
   </tr>
   <tr>
@@ -409,7 +413,7 @@ Procédez comme suit :
 
 Si votre administrateur a activé la fonctionnalité de stratégie appliquée automatiquement, tout document créé ou modifié est automatiquement protégé lors de son enregistrement.
 
-Si la stratégie appliquée automatiquement est activée, Document Security Extension for Microsoft® Office vous invite à vous connecter au serveur Document Security. Saisissez votre nom d’utilisateur ou d’utilisatrice et votre mot de passe afin que le serveur puisse vous authentifier. Si vous avez fourni les informations d’identification appropriées, le document est enregistré et protégé.
+Si la stratégie appliquée automatiquement est activée, Document Security Extension for ® Office vous invite à vous connecter au serveur Document Security. Saisissez votre nom d’utilisateur ou d’utilisatrice et votre mot de passe afin que le serveur puisse vous authentifier. Si vous avez fourni les informations d’identification appropriées, le document est enregistré et protégé.
 
 >[!NOTE]
 >
@@ -417,13 +421,13 @@ Si la stratégie appliquée automatiquement est activée, Document Security Exte
 
 ### Synchronisation en vue de l’accès hors connexion {#synchronizing-for-offline-access}
 
-Les politiques vous permettent d’ouvrir des fichiers lorsque vous êtes hors ligne et que vous n’êtes pas connecté à Document Security. Vous devez vous être connecté auparavant à Document Security pour établir vos informations d’identification avec le serveur et pouvoir ainsi travailler hors connexion. Si vous prévoyez de travailler sur des fichiers hors ligne, Adobe vous recommande de les synchroniser avec Document Security. Effectuez cette opération avant de vous déconnecter afin de vous assurer que les paramètres de politique de vos fichiers sont à jour par rapport au serveur. Adobe vous recommande également d’ouvrir le fichier au moins une fois en ligne avant de l’ouvrir hors ligne. Si vous n’ouvrez pas le fichier à une reprise en ligne ou si vous ne le synchronisez pas avec le serveur, il est possible que vous puissiez tout de même utiliser des fichiers protégés par une politique alors que vous êtes hors ligne. Toutefois, la période d’ouverture hors connexion ne doit pas avoir expiré et les paramètres de politique du fichier ne doivent pas avoir été modifiés depuis la dernière synchronisation manuelle ou automatique avec le serveur.
+Les politiques vous permettent d’ouvrir des fichiers lorsque vous êtes hors ligne et que vous n’êtes pas connecté à Document Security. Vous devez vous être connecté auparavant à Document Security pour établir vos informations d’identification avec le serveur et pouvoir ainsi travailler hors connexion. Si vous prévoyez de travailler sur des fichiers hors ligne, Adobe vous recommande de les synchroniser avec Document Security. Effectuez cette opération avant de vous déconnecter afin de vous assurer que les paramètres de politique de vos fichiers sont à jour par rapport au serveur. Adobe vous recommande également d’ouvrir le fichier au moins une fois en ligne avant de l’ouvrir hors ligne. Si vous n’ouvrez pas le fichier à une reprise en ligne ou si vous ne le synchronisez pas avec le serveur, il est possible que vous puissiez tout de même utiliser des fichiers protégés par une politique alors que vous êtes hors ligne. Toutefois, la période de bail hors ligne ne doit pas avoir expiré et les paramètres de politique du fichier ne doivent pas avoir été modifiés depuis la dernière synchronisation manuelle ou automatique avec le serveur.
 
 Procédez comme suit :
 
 * Dans Document Security Extension for Microsoft® Office 2010 et 2013, dans l’onglet **Document Security**, sélectionnez **Synchroniser hors ligne**.
 
-  ***Note &#x200B;** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
+  ***Note ** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
 
 ### Utiliser les filigranes dynamiques {#working-with-dynamic-watermarks}
 
@@ -583,7 +587,7 @@ Lorsque vous ouvrez un fichier protégé par une politique dans Word, les inform
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Billet de blog > Publier** Non disponible pendant une session protégée.
 
@@ -599,9 +603,9 @@ Lorsque vous ouvrez un fichier protégé par une politique dans Word, les inform
 
 **Publipostage** La plupart des options de cet onglet ne sont pas disponibles pendant une session protégée.
 
-**Révision > Vérification > Recherche** Restreinte par l’autorisation Copier. Non disponible si la copie n’est pas autorisée.
+**Révision > Relecture > Recherche** Restreinte par l’autorisation Copier. Non disponible si la copie n’est pas autorisée.
 
-**Révision > Vérification > Dictionnaire des synonymes** Restreinte par l’autorisation Copier. Non disponible si la copie n’est pas autorisée.
+**Révision > Relecture > Dictionnaire des synonymes** Restreinte par l’autorisation Copier. Non disponible si la copie n’est pas autorisée.
 
 **Révision > Langue > Traduire > Traduire le document** Activé avec l’autorisation Copier.
 
@@ -615,7 +619,7 @@ Lorsque vous ouvrez un fichier protégé par une politique dans Word, les inform
 
 **Révision > Protéger > Restreindre la modification** Non disponible pendant une session protégée.
 
-**Affichage > Macros** L’autorisation Copier limite certaines macros, ce qui les rend indisponibles sauf si la copie est autorisée.
+**Affichage > Macros** L’autorisation Copier limite certaines macros, ce qui les rend indisponibles sauf si la copie est autorisée.
 
 **Modules complémentaires** Ne peuvent pas être ajoutés ni supprimés pendant une session protégée.
 
@@ -655,7 +659,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Fichier > Serveur > Menu Tâches du serveur de fichiers** Non disponible pendant une session protégée.
 
@@ -687,9 +691,9 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Données > Outils de données > Validation des données** Restreinte par l’autorisation Modifier.
 
-**Révision > Vérification > Recherche** Restreinte par l’autorisation Copier.
+**Révision > Relecture > Recherche** Restreinte par l’autorisation Copier.
 
-**Révision > Vérification > Dictionnaire des synonymes** Restreinte par l’autorisation Copier.
+**Révision > Relecture > Dictionnaire des synonymes** Restreinte par l’autorisation Copier.
 
 **Révision > Langue > Traduire** Restreinte par l’autorisation Copier.
 
@@ -717,7 +721,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Enregistrer les informations de récupération automatique** Indisponible pendant une session protégée.
 
-***Note &#x200B;** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
+***Note ** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
 
 #### Restrictions dans PowerPoint 2010 et PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
@@ -753,7 +757,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Diaporama > Configuration > Enregistrer le diaporama** Restreint par l’autorisation Modifier.
 
-**Révision > Vérification > Dictionnaire des synonymes** Restreinte par l’autorisation Copier.
+**Révision > Relecture > Dictionnaire des synonymes** Restreinte par l’autorisation Copier.
 
 **Révision > Langue > Traduire** Restreinte par l’autorisation Copier.
 

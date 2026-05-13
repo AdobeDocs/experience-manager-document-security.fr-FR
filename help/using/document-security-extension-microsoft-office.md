@@ -1,15 +1,26 @@
 ---
-title: Présentation d’AEM Document Security Extension pour Microsoft® Office
-description: À l’aide de l’extension Document Security pour Microsoft® Office, vous pouvez appliquer des paramètres de confidentialité prédéfinis à vos fichiers Microsoft® Office.
+title: Présentation d’AEM Document Security Extension for Microsoft&reg ; Office
+description: À l’aide de Document Security Extension for Microsoft&reg ; Office, vous pouvez appliquer des paramètres de confidentialité prédéfinis à vos fichiers Microsoft&reg ; Office.
 uuid: a5428c50-fae3-4823-9e6f-0f5306e7248f
 content-type: reference
 topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
-source-git-commit: 7eb2b2e5ba296b87159978037ae50c702f7d0656
+TQID: https://experienceleague.adobe.com/YnTOBtidvTX9vCQcIiF0IAXWnqCRZDY3YWUgStWVmh0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 98%
+source-wordcount: 1293
+ht-degree: 96%
 
 ---
 
@@ -52,9 +63,9 @@ Lorsqu’un utilisateur ou une utilisatrice tente d’ouvrir un fichier protég�
 
   Si la personne qui a appliqué la stratégie la modifie ou révoque l’accès au fichier, les autorisations de la personne utilisatrice concernant le fichier sont modifiées ou supprimées même si elle dispose déjà du fichier. Si le fichier lui-même est révoqué, une URL peut être fournie à l’utilisateur pour obtenir une copie mise à jour.
 
-  Si la politique autorise l’accès hors ligne, les utilisateurs et les utilisatrices peuvent ouvrir des fichiers protégés par une politique sans connexion Internet ou sans connexion réseau pendant la période d’ouverture hors connexion spécifiée. Lorsque la période d’ouverture hors connexion se termine, l’utilisateur ou l’utilisatrice doit se connecter et se synchroniser avec Document Security, ce qui démarre une nouvelle période d’ouverture.
+  Si la politique autorise l’accès hors ligne, les utilisateurs et les utilisatrices peuvent ouvrir des fichiers protégés par une politique sans connexion Internet ou sans connexion réseau pendant la période de bail hors ligne spécifiée. Lorsque la période de bail hors ligne se termine, l’utilisateur ou l’utilisatrice doit se connecter et se synchroniser avec Document Security, ce qui démarre une nouvelle période de bail.
 
-  Si la politique autorise l’accès hors ligne, les utilisateurs et les utilisatrices peuvent ouvrir des fichiers protégés par une politique sans connexion Internet ou sans connexion réseau pendant la période d’ouverture hors connexion spécifiée. Les événements tels que les tentatives d’ouverture du nouveau fichier sont également contrôlés et enregistrés comme pour le fichier original.
+  Si la politique autorise l’accès hors ligne, les utilisateurs et les utilisatrices peuvent ouvrir des fichiers protégés par une politique sans connexion Internet ou sans connexion réseau pendant la période de bail hors ligne spécifiée. Les événements tels que les tentatives d’ouverture du nouveau fichier sont également contrôlés et enregistrés comme pour le fichier original.
 
 ## Utiliser Document Security pour protéger vos fichiers {#using-document-security-to-protect-your-files}
 
@@ -82,7 +93,7 @@ Pour en savoir plus sur Document Security d’AEM, consultez les ressources pr�
   </tr>
   <tr>
    <td><p>Mises à jour des correctifs, notes techniques et informations supplémentaires sur cette version du produit.</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/fr?support-solution=General&support-tab=home&lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support">Support technique d’Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>

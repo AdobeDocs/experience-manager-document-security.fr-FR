@@ -256,7 +256,7 @@ Certains des paramètres disponibles pour la création de politiques dans les pa
    <td><p>Non applicable.</p></td>
   </tr>
   <tr>
-   <td><p>Hors ligne</p></td>
+   <td><p>Hors connexion</p></td>
    <td><p>Le fichier peut être ouvert hors connexion.</p></td>
   </tr>
   <tr>

@@ -212,7 +212,7 @@ Avant de commencer, préconfigurez le programme d’installation pour qu’il po
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Nom de clé</strong></p> </td>
+   <td><p><strong>Nom de la clé</strong></p> </td>
    <td><p><strong>Description</strong></p> </td>
    <td><p><strong>Valeur de la </strong><strong></strong><strong>clé par défaut</strong></p> </td>
   </tr>

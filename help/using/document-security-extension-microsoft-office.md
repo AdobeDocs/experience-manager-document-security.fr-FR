@@ -7,16 +7,10 @@ topic-tags: using
 discoiquuid: cf93f9f5-1fb6-4909-815e-0ffb8c6ea6d1
 exl-id: 3e07c031-3f88-4bde-bdb3-b136ef5f9527
 TQID: https://experienceleague.adobe.com/YnTOBtidvTX9vCQcIiF0IAXWnqCRZDY3YWUgStWVmh0
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
 source-wordcount: 1293
@@ -93,7 +87,7 @@ Pour en savoir plus sur Document Security d’AEM, consultez les ressources pr�
   </tr>
   <tr>
    <td><p>Mises à jour des correctifs, notes techniques et informations supplémentaires sur cette version du produit.</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/fr?support-solution=General&support-tab=home&lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=fr#support">Support technique d’Experience Cloud</a></p> </td>
   </tr>
  </tbody>
 </table>

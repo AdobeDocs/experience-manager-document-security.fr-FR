@@ -7,9 +7,14 @@ topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
 exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
 TQID: https://experienceleague.adobe.com/cI8I72aByEI0tcij2o-QNkGjTxCztTa4uZFXsfwlMVc
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
 workflow-type: tm+mt
 source-wordcount: 6279
@@ -427,7 +432,7 @@ Procédez comme suit :
 
 * Dans Document Security Extension for Microsoft® Office 2010 et 2013, dans l’onglet **Document Security**, sélectionnez **Synchroniser hors ligne**.
 
-  ***Note ** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
+  ***Note &#x200B;** : le bouton de synchronisation hors ligne est disponible même si l’utilisateur ou l’utilisatrice ne dispose pas d’une autorisation hors ligne pour le document. Toutefois, sélectionner ce bouton ne produit aucune action.*
 
 ### Utiliser les filigranes dynamiques {#working-with-dynamic-watermarks}
 
@@ -587,7 +592,7 @@ Lorsque vous ouvrez un fichier protégé par une politique dans Word, les inform
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Billet de blog > Publier** Non disponible pendant une session protégée.
 
@@ -659,7 +664,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Fichier > Workflows** Non disponible pendant une session protégée.
 
-***Note ** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
+***Note &#x200B;** : le démarrage d’un workflow dans Word, Excel et PowerPoint 2010 est uniquement disponible dans les versions Office Professional Plus 2010, Office Enterprise 2010, Office Ultimate 2010 et les versions 2010 autonomes.*
 
 **Fichier > Serveur > Menu Tâches du serveur de fichiers** Non disponible pendant une session protégée.
 
@@ -721,7 +726,7 @@ Les fonctionnalités répertoriées ci-dessous sont restreintes dans les situati
 
 **Enregistrer les informations de récupération automatique** Indisponible pendant une session protégée.
 
-***Note ** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
+***Note &#x200B;** : si vous tentez de modifier sans autorisation une cellule dans un fichier protégé par une politique, Excel vous avertit de manière erronée que vous devez utiliser la commande Retirer la protection de la feuille pour supprimer la protection.*
 
 #### Restrictions dans PowerPoint 2010 et PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 

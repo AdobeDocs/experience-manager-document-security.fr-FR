@@ -9,19 +9,22 @@ exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
 TQID: https://experienceleague.adobe.com/VeYp8E0Yyp4uOAx33B6YmQVUJfNFZOvIad97NopbKcM
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: b2df949228acdc23ca7f2c55b72e62c1dba130b8
+    internal-label: Security
+source-git-commit: 97e24a5c1733b47777d7dcf165ceb3309bf41972
 workflow-type: tm+mt
-source-wordcount: 2933
+source-wordcount: '2933'
 ht-degree: 94%
-
 ---
-
 # Installation et configuration d’AEM Document Security Extension for Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Ce document vous guide pour l’installation et la configuration de l’extension Adobe Experience Manager Document Security pour Microsoft Office.
@@ -37,13 +40,13 @@ Ce document contient des informations relatives aux tâches suivantes :
 Avant d’installer l’extension Document Security pour Microsoft Office, assurez-vous que vous remplissez les conditions suivantes :
 
 * Vous avez lu les [Notes de mise à jour](document-security-extension-release-notes.md).
-* Microsoft Office est activé. la boîte de dialogue d’activation n’apparaît pas lors de l’ouverture des applications Microsoft Office.
-* les Service Packs les plus récents pour Microsoft Windows et Microsoft Office sont installés.
+* Microsoft Office est activé. La boîte de dialogue d’activation n’apparaît pas lors de l’ouverture des applications Microsoft Office.
+* Les packs de srevices les plus récents pour Microsoft Windows et Microsoft Office sont installés.
 * Si vous installez Document Security pour Microsoft Office dans une langue non prise en charge, lancez au moins une fois l’application Office.
 
 >[!NOTE]
 >
->N’installez pas le logiciel dans un dossier dont le nom contient des caractères codés sur deux octets. Dans le cas contraire, le menu Document Security d’AEM ne s’affiche pas dans Microsoft Office.
+>N’installez pas le logiciel dans un dossier dont le nom contient des caractères codés sur deux octets. Si vous le faites, le menu Document Security d’AEM ne s’affiche pas dans Microsoft Office.
 
 >[!NOTE]
 >
@@ -55,13 +58,13 @@ Désactivez l’option Protection contre le débordement de la mémoire tampon d
 
 ### Désinstallation des plug-ins tiers {#uninstall-third-party-plug-ins}
 
-AEM Document Security Extension for Microsoft Office ne prend pas en charge les modules externes tiers pour les applications Microsoft Office. Comme cette extension est en conflit avec les plug-ins tiers, désinstallez les plug-ins des fournisseurs autres qu’Adobe dans Microsoft Office avant d’installer Document Security pour Microsoft Office. Adobe ne prend pas en charge les applications Document Security pour Microsoft Office si des plug-ins tiers sont installés.
+AEM Document Security Extension for Microsoft Office ne prend pas en charge les modules externes tiers pour les applications Microsoft Office. Comme cette extension est en conflit avec les plug-ins tiers, désinstallez les plug-ins des fournisseurs autres qu’Adobe dans Microsoft Office avant d’installer Document Security pour Microsoft Office. Adobe n’assure pas la prise en charge de Document Security pour Microsoft Office lorsque des plug-ins tiers sont installés.
 
 ## Configuration requise {#system-requirements}
 
 ### Client Document Security Extension {#document-security-extension-client}
 
-Vérifiez les configurations minimales suivantes sur lesquelles vous souhaitez installer Document Security Extension :
+Vérifiez que les configurations minimales suivantes sont réunies pour installer Document Security Extension :
 
 * Versions 32 ou 64 bits de Microsoft Office 2019 Professionnel Plus sur Microsoft Windows 11 anglais, français, allemand, japonais, italien, espagnol, portugais brésilien, coréen, chinois simplifié ou traditionnel.
 
@@ -79,7 +82,7 @@ Vérifiez les configurations minimales suivantes sur lesquelles vous souhaitez i
 
 ### Document Security {#document-security}
 
-Pour utiliser Document Security Extension, vous devez pouvoir vous connecter à Adobe LiveCycle Rights Management ES2 et versions ultérieures ou au module complémentaire Document Security pour AEM forms 6.0 ou versions ultérieures.
+Pour utiliser Document Security Extension, vous devez pouvoir vous connecter à Adobe LiveCycle Rights Management ES2 et versions ultérieures ou au module complémentaire Document Security pour AEM Forms 6.0 ou versions ultérieures.
 
 ## Installation de Document Security Extension for Microsoft Office {#installing-document-security-extension-for-microsoft-office}
 
@@ -99,7 +102,7 @@ Utilisez un utilitaire d’extraction de fichier, tel que WinZip, pour extraire 
 
 Le programme d’installation est également disponible sous la forme d’un fichier MSI, qui peut être utilisé pour la personnalisation.
 
-### Installation d’un fichier MSI en mode silencieux {#install-an-msi-file-in-silent-mode}
+### Installer un fichier MSI en mode silencieux {#install-an-msi-file-in-silent-mode}
 
 1. Utilisez un utilitaire d’extraction de fichier, tel que WinZip, pour extraire `DocumentSecurityExtensionforMicrosoftOffice.msi` du fichier ZIP.
 
@@ -109,7 +112,7 @@ Le programme d’installation est également disponible sous la forme d’un fic
 
 ## Préconfigurer le programme d’installation pour la connexion à Document Security {#preconfiguring-the-installer-to-connect-to-document-security}
 
-Vous pouvez préconfigurer l’extension Document Security afin que le programme d’installation de Microsoft Office pointe vers un serveur LiveCycle ou AEM. Cela permet de s’assurer que les utilisateurs et les utilisatrices qui installent l’extension Document Security pour Microsoft Office peuvent utiliser les fonctionnalités sans configurer de connexion. En outre, ces utilisateurs peuvent ouvrir des documents protégés sans configuration. Toutefois, ils ne peuvent pas protéger les nouveaux documents tant qu’ils n’ont pas configuré le client pour qu’il utilise un serveur particulier.
+Vous pouvez préconfigurer le programme d’installation de Document Security Extension pour Microsoft Office afin qu’il pointe vers un serveur LiveCycle ou AEM. Cela permet de s’assurer que les utilisateurs et les utilisatrices qui installent l’extension Document Security pour Microsoft Office peuvent utiliser les fonctionnalités sans configurer de connexion. Par conséquent, ces utilisateurs et utilisatrices peuvent ouvrir des documents protégés sans configuration. Toutefois, ils ne peuvent pas protéger les nouveaux documents tant qu’ils n’ont pas configuré le client pour qu’il utilise un serveur particulier.
 
 Les étapes suivantes décrivent comment créer et configurer un fichier MSI. Ce fichier MSI contient les valeurs de registre. Ces valeurs sont requises pour préconfigurer l’extension Document Security pour le programme d’installation de Microsoft Office sur le serveur LiveCycle ou AEM installé dans votre entreprise.
 
@@ -138,13 +141,13 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
    >
    >Fermez toujours le fichier DocumentSecurityExtensionforMicrosoftOffice.msi avant d’exécuter le programme d’installation. Vous ne pouvez pas exécuter le programme d’installation si Orca utilise le fichier MSI.
 
-### Création et configuration du fichier MSI {#create-and-configure-the-msi-file}
+### Créer et configurer le fichier MSI {#create-and-configure-the-msi-file}
 
 1. Cliquez sur **[!UICONTROL Démarrer > Programmes > Orca]**.
 
 1. Cliquez sur **[!UICONTROL Fichier > Ouvrir]**, puis accédez au fichier `DocumentSecurityExtensionforMicrosoftOffice.msi`.
 
-1. Sélectionnez Property dans la liste des tables (sur le côté gauche).
+1. Sélectionnez Propriété dans la liste des tables (sur le côté gauche).
 
 1. Modifiez les valeurs de nom des clés suivantes en fonction de l’installation de Rights Management ou Document Security de votre entreprise.
 
@@ -174,7 +177,7 @@ For more information about how to edit Microsoft Windows&reg; Installer files us
 
    | **Nom de la clé** | **Description** | **Valeur de la clé par défaut** |
    |---|---|---|
-   | `IsDefault` | Serveur APS par défaut. | Serveur par défaut |
+   | `IsDefault` | Le serveur APS par défaut. | Serveur par défaut |
 
 1. Enregistrez le fichier modifié dans le répertoire contenant le programme d’installation MSI d’origine.
 
@@ -209,44 +212,44 @@ Avant de commencer, préconfigurez le programme d’installation pour qu’il po
 
 1. Modifiez les valeurs de nom des clés suivantes en fonction de l’installation de Rights Management ou Document Security de votre entreprise.
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Nom de la clé</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-   <td><p><strong>Valeur de la </strong><strong></strong><strong>clé par défaut</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
-   <td><p>Activez ou désactivez la fonction de stratégie appliquée automatiquement .</p> <p><code>1</code>: Activer</p> <p>0: Désactiver</p> </td>
-   <td><p>0</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
-   <td><p>GUID de la politique à utiliser lorsque de nouveaux documents sont enregistrés. Cette valeur s’applique à la fonction de stratégie appliquée automatiquement .</p> </td>
-   <td><p>ID de politique hexadécimal visible sur le serveur RM</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
-   <td><p>URL du serveur.</p> </td>
-   <td><p>default.corp.com</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
-   <td><p>Numéro de port du serveur.</p> </td>
-   <td><p>1234</p> </td>
-  </tr>
-  <tr>
-   <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
-   <td><p>Détermine si des documents peuvent être créés sans la protection de Document Security, dans le cas où le client ne peut pas contacter le serveur pour protéger le document lors du premier enregistrement.</p> <p>1 : Autoriser les enregistrements non protégés </p> <p>0 : Empêcher la création de nouveaux documents lorsque le client ne peut pas contacter le serveur pour enregistrer le document.</p> </td>
-   <td><p>0</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><p><strong>Nom de la clé</strong></p> </td>
+      <td><p><strong>Description</strong></p> </td>
+      <td><p><strong>Valeur de la </strong><strong></strong><strong>clé par défaut</strong></p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_IS_AUTO_ APPLY</code></p> </td>
+      <td><p>Activez ou désactivez la fonction de stratégie appliquée automatiquement .</p> <p><code>1</code>: Activer</p> <p>0: Désactiver</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_POLICY_I D</code></p> </td>
+      <td><p>GUID de la politique à utiliser lorsque de nouveaux documents sont enregistrés. Cette valeur s’applique à la fonction de stratégie appliquée automatiquement .</p> </td>
+      <td><p>ID de politique hexadécimal visible sur le serveur RM</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_U RL</code></p> </td>
+      <td><p>URL du serveur.</p> </td>
+      <td><p>default.corp.com</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_SERVER_P ORT_NO</code></p> </td>
+      <td><p>Numéro de port du serveur.</p> </td>
+      <td><p>1234</p> </td>
+   </tr>
+   <tr>
+      <td><p><code>AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE</code></p> </td>
+      <td><p>Détermine si des documents peuvent être créés sans la protection de Document Security, dans le cas où le client ne peut pas contacter le serveur pour protéger le document lors du premier enregistrement.</p> <p>1 : Autoriser les enregistrements non protégés </p> <p>0 : Empêcher la création de nouveaux documents lorsque le client ne peut pas contacter le serveur pour enregistrer le document.</p> </td>
+      <td><p>0</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->L’option `AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` est utile lorsque vous souhaitez rappeler aux clientes et aux clients de protéger tous leurs documents sans les obliger à le faire. Cette option s’avère également précieuse lorsque vous savez que les utilisateurs et les utilisatrices créent des documents alors qu’ils sont déconnectés du réseau. Vous ne souhaitez pas les empêcher de créer et d’enregistrer des documents.
+   >[!NOTE]
+   >
+   >L’option `AUTO_APPLY_POLICY_ALLOW_UN PROTECTED_SAVE` est utile lorsque vous souhaitez rappeler aux clientes et aux clients de protéger tous leurs documents sans les obliger à le faire. Cette option s’avère également précieuse lorsque vous savez que les utilisateurs et les utilisatrices créent des documents alors qu’ils sont déconnectés du réseau. Vous ne souhaitez pas les empêcher de créer et d’enregistrer des documents.
 
 1. Enregistrez le fichier modifié dans le répertoire contenant le fichier MSI d’origine.
 
@@ -260,8 +263,8 @@ L’administrateur ou l’administratrice peut activer la possibilité de proté
 
 Si la politique appliquée automatiquement est activée, tous les documents enregistrés par l’utilisateur sont protégés par la politique par défaut. Cette action s’applique dans les cas suivants :
 
-* Un utilisateur crée un document, le modifie et l’enregistre.
-* Un utilisateur ouvre un document non protégé, le modifie et l’enregistre.
+* Lorsqu’un utilisateur ou une utilisatrice crée un document, le modifie et l’enregistre.
+* Lorsqu’un utilisateur ou une utilisatrice ouvre un document non protégé, le modifie et l’enregistre.
 
 Pour plus d’informations sur la configuration de la politique appliquée automatiquement, voir [Configuration d’une application automatique de la politique par défaut](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
@@ -277,7 +280,7 @@ Vous pouvez activer ou désactiver l’interface d’utilisation sans ruban en m
 
 1. Fermez l’éditeur du registre.
 
-## Activation du filigrane pour impression dans Microsoft Excel {#enable-watermark-for-printing-in-microsoft-excel}
+## Activer le filigrane pour l’impression dans Microsoft Excel {#enable-watermark-for-printing-in-microsoft-excel}
 
 Vous pouvez modifier les paramètres du registre Windows afin que le filigrane dynamique coexiste avec les en-têtes et pieds de page existants. Les paramètres du registre rendent le filigrane disponible uniquement pendant l’impression. Effectuez la procédure suivante pour mettre à jour le registre et activer les filigranes lors de l’impression :
 
@@ -290,7 +293,7 @@ Vous pouvez modifier les paramètres du registre Windows afin que le filigrane d
 
 >[!NOTE]
 >
->Dans l’Explorateur Windows, vous pouvez créer un document Microsoft Excel à l’aide du menu Fichier ou du menu contextuel. Pour les documents créés avec des méthodes classiques, la date d’impression ne peut pas être récupérée ou modifiée. Il s’agit d’une limitation de Microsoft Excel. Les filigranes AEM Document Security dépendent de la date d’impression du document. Pour ces documents, le filigrane est donc ramené à une date antérieure. De plus, les en-têtes et pieds de page ne sont pas non plus conservés.
+>Dans l’Explorateur Windows, vous pouvez créer un document Microsoft Excel à l’aide du menu Fichier ou du menu contextuel. Pour les documents créés avec les méthodes indiquées, la date d’impression ne peut pas être récupérée ou modifiée. Il s’agit d’une limitation de Microsoft Excel. Les filigranes AEM Document Security dépendent de la date d’impression du document. Pour ces documents, le filigrane est donc ramené à une date antérieure. De plus, les en-têtes et pieds de page ne sont pas non plus conservés.
 
 ## Ajout d’une page personnalisée à un document {#coverpage}
 
@@ -300,14 +303,14 @@ Un utilisateur ou une utilisatrice peut tenter d’ouvrir le document protégé 
 
 * Effectuez une sauvegarde du fichier CommonResources.dll. Le chemin par défaut est :
 
-   * **(Pour la version 32 bits d’Office sur une machine en 32 bits)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **(Pour la version 32 bits d’Office sur une machine en 32 bits)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **(Pour la version 32 bits d’Office sur une machine en 64 bits)** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **(Pour la version 32 bits d’Office sur une machine en 64 bits)** C:\Program Files (x86)\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
-   * **(Pour la version 64 bits d’Office sur une machine en 64 bits)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
+  * **(Pour la version 64 bits d’Office sur une machine en 64 bits)** C:\Program Files\Adobe\Adobe Experience Manager Forms\Document Security Extension
 
 * Assurez-vous que Microsoft Visual Studio 2008 ou une version ultérieure est installé. Vous pouvez également utiliser n’importe quel autre utilitaire pour modifier les fichiers DLL.
-* Procédez à l&#39;extraction de l’archive templates.zip. L’archive contient des modèles .xlsx, .docx et .pptx pour la page de garde. Utilisez uniquement les modèles fournis pour les types de fichiers .xlsx, .docx et .pptx. Vous pouvez créer vos propres modèles pour d’autres types de fichier. Personnalisez les modèles afin d’inclure des messages et des instructions personnalisés. Vous pouvez trouver templates.zip sur :
+* Procédez à l&#39;extraction de l’archive templates.zip. L’archive contient des modèles .xlsx, .docx et .pptx pour la page de garde. Utilisez uniquement les modèles fournis pour les types de fichiers .xlsx, .docx et .pptx. Vous pouvez créer vos propres modèles pour d’autres types de fichiers. Personnalisez les modèles afin d’inclure des messages et des instructions personnalisés. Vous pouvez trouver template.zip sur :
 
 [Obtenir le fichier](assets/templates.zip)
 
@@ -379,13 +382,13 @@ Le fichier CommonResources.dll contient des informations sur les modèles de res
 
 Vous pouvez personnaliser le fichier CommonResources.dll afin d’ajouter une page de couverture personnalisée. Après avoir personnalisé le fichier, vous pouvez remplacer manuellement le fichier d’origine par le fichier personnalisé sur tous les postes de travail, ou vous pouvez choisir une méthode automatisée pour remplacer le fichier.
 
-Dans un grand environnement, il est difficile et fastidieux de remplacer manuellement le fichier `CommonResources.dll file` par défaut par un fichier `CommonResources.dll` personnalisé. Vous pouvez utiliser un outil d’extraction automatique et de création de package (par exemple, WinZip Self-Extractor) pour traiter le fichier CommonResources.dll personnalisé avec le programme d’installation d’AEM Document Security Extension for Microsoft Office Ultérieurement, vous pouvez distribuer l’installation personnalisée à tous les postes de travail. Cette méthode réduit le temps nécessaire pour remplacer le fichier par défaut `CommonResources.dll` par un fichier personnalisé. Elle assure aussi que tous les postes de travail ont le fichier CommonResources.dll requis. L’outil d’extraction automatique et de création de package n’est qu’une des nombreuses méthodes possibles de remplacement automatique d’un fichier. Vous pouvez choisir n’importe quelle méthode qui convient à votre environnement.
+Dans un grand environnement, il est difficile et fastidieux de remplacer manuellement le fichier `CommonResources.dll file` par défaut par un fichier `CommonResources.dll` personnalisé. Vous pouvez utiliser un outil d’extraction automatique et de création de package (par exemple, WinZip Self-Extractor) pour empaqueter le fichier CommonResources.dll personnalisé avec le programme d’installation d’AEM Document Security Extension for Microsoft Office. Ultérieurement, vous pouvez distribuer le programme d’installation personnalisé à tous les postes de travail. Cette méthode réduit le temps nécessaire pour remplacer le fichier par défaut `CommonResources.dll` par un fichier personnalisé. Elle assure aussi que tous les postes de travail ont le fichier CommonResources.dll requis. L’outil d’extraction automatique et de création de package n’est qu’une des nombreuses méthodes possibles de remplacement automatique d’un fichier. Vous pouvez choisir n’importe quelle méthode qui convient à votre environnement.
 
 Vous pouvez exécuter les étapes suivantes pour créer un package personnalisé du fichier `CommonResources.dll`avec le programme d’installation d’AEM Document Security Extension for Microsoft Office :
 
 1. Installez un outil d’extraction automatique et de création de package. Par exemple, WinZip Self-Extractor.
 1. Créez un nouveau dossier. Par exemple, NOM_DE_DOSSIER
-1. Placez le programme d’installation d’origine de l’extension AEM Document Security et le fichier CommonResources.dll dans le dossier que vous venez de créer.
+1. Placez le programme d’installation d’origine d’AEM Document Security Extension et le fichier CommonResources.dll personnalisé dans le dossier que vous venez de créer.
 1. Créez un fichier de commandes dans le dossier. Par exemple, NOM_DE_DOSSIER\Installer.bat
 1. Ouvrez le fichier de commandes afin de le modifier et insérez le code suivant :
 
@@ -431,7 +434,7 @@ Vous pouvez exécuter les étapes suivantes pour créer un package personnalisé
 1. **(Uniquement pour le programme d’installation de l’extension AEM Document Security pour Microsoft Office avec une extension .exe)** Remplacez la ligne de code suivante :
 
    `msiexec /i YOUR_FOLDER_NAME\MSI_NAME.msi`
-avec
+   avec
 
    `START /w YOUR_FOLDER_NAME\APPLICATION_NAME.exe`
 
@@ -444,7 +447,7 @@ avec
 
    >[!NOTE]
    >
-   >Assurez-vous que le package à extraction automatique est configuré pour être exécuté en tant qu’administrateur ou administratrice et
+   >Assurez-vous que le package à extraction automatique est configuré pour être exécuté en tant qu’administrateur ou administratrice et automatiquement
    >exécute automatiquement le fichier de commandes une fois l’extraction terminée.
 
 Désormais, le programme d’installation à extraction automatique de l’extension AEM Document Security pour Microsoft Office intègre un fichier CommonResources.dll personnalisé et est prêt à être distribué.
